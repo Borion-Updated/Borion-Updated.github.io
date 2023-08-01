@@ -1,0 +1,26 @@
+.button-dl {
+    text-decoration: none;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #ffffff;
+    background-color: #121212;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .15s;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.button-dl:hover {
+    border-color: #33c4ed;
+    color: #33c4ed;
+}
+
+.button-dl:active {
+    border-color: #33c5edad;
+    color: #33c4edad;
+}
+
+.player-ico-grid {
+    grid-template-columns: auto;
+}
