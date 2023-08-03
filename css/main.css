@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-family: 'mojangles';
+    font-size: 40px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-contents {
+    width: calc(50% - 2em);
+    margin-top: 2em;
+    margin-bottom: 4em;
+
+}
+
+.banner-contents img {
+    max-width: 100%;
+    cursor: default;
+}
+
+
+.content {
+    flex: 1;
+}
+
+.page-bottom {
+    border-top-style: solid;
+    border-width: 4px;
+    border-color: #ffffff;
+    background-color: #121212;
+    color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media(prefers-color-scheme: dark) {
+    html {
+        color-scheme:dark
+    }
+}
+
+@font-face {
+        font-family: 'mojangles';
+        src: url('../font/mojangles.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        color: ghostwhite;
+    }

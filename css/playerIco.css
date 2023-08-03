@@ -1,0 +1,58 @@
+.button-dl {
+    text-decoration: none;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #ffffff;
+    background-color: #121212;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .15s;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.button-dl:hover {
+    border-color: #33c4ed;
+    color: #33c4ed;
+}
+
+.button-dl:active {
+    border-color: #33c5edad;
+    color: #33c4edad;
+}
+
+.links {
+    display: inline;
+    float: left;
+}
+
+.github-pages {
+    display: inline;
+    float: right;
+}
+
+.link-button {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'mojangles';
+    font-size: 40px;
+    color: inherit;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.player-ico {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'mojangles';
+    font-size: 40px;
+    color: inherit;
+    text-decoration: none;
+    margin: 5px;
+}
