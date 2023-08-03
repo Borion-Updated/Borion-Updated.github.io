@@ -21,6 +21,38 @@
     color: #33c4edad;
 }
 
-.player-ico-grid {
-    grid-template-columns: auto;
+.links {
+    display: inline;
+    float: left;
+}
+
+.github-pages {
+    display: inline;
+    float: right;
+}
+
+.link-button {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'mojangles';
+    font-size: 40px;
+    color: inherit;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.player-ico {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'mojangles';
+    font-size: 40px;
+    color: inherit;
+    text-decoration: none;
+    margin: 5px;
 }

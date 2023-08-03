@@ -22,7 +22,7 @@ p {
 .banner-contents {
     width: calc(50% - 2em);
     margin-top: 2em;
-    margin-bottom: 6em;
+    margin-bottom: 4em;
 
 }
 
@@ -37,13 +37,15 @@ p {
 }
 
 .page-bottom {
-    border-style: solid;
+    border-top-style: solid;
     border-width: 4px;
     border-color: #ffffff;
     background-color: #121212;
     color: #ffffff;
-    text-align: center;
-    padding: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 @media(prefers-color-scheme: dark) {
