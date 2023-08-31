@@ -1,0 +1,79 @@
+body {
+  margin: 0px;
+}
+#titleBar {
+  background-color: rgb(37, 37, 37);
+  color: whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 40px;
+  align-items: center;
+}
+#authors {
+  display: flex;
+  flex-direction: column;
+  justify-self: left;
+  /* uncomment the line below if you are adding another dev (over 3 in total)*/
+  /* max-height: 100px; */
+  overflow-y: auto;
+  border-radius: 5px;
+  padding: 5px;
+  padding-right: 7px;
+  box-shadow: 5px 5px 10px rgb(19, 19, 19),
+              -5px -5px 10px rgb(55, 55, 55);
+  gap: 5px;
+}
+#authors::-webkit-scrollbar {
+  width: 10px;
+}
+#authors::-webkit-scrollbar-thumb {
+  background-color: #d4d4d4;
+  border-radius: 5px;
+}
+#authors a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+}
+#authors img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#authors p {
+  margin: 0px;
+}
+#titleBar :nth-child(2) {
+  justify-self: center;
+}
+#links {
+  display: flex;
+  flex-direction: column;
+  justify-self: right;
+  box-shadow: 5px 5px 10px rgb(19, 19, 19),
+              -5px -5px 10px rgb(55, 55, 55);
+  gap: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 7px;
+  max-height: 100px;
+}
+#links a {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  color: inherit;
+  text-decoration: none;
+}
+#links p {
+  margin: 0px;
+}
+#links img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
