@@ -1,53 +1,84 @@
-<html>
-	<head>
-		<title>Borion-Updated on top</title>
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borion - Minecraft Utility</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.0/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-section">
+            <a href="./index.html">
+                <img src="img/banner.png" alt="Borion Logo" class="logo">
+            </a>
+            <div id="description" class="description">
+            </div>
+        </div>
 
-		<!-- preload (predownload?) css then add ("quicker style loading?") -->
-		<link rel="preload" as="style" href="./index.css">
-		<link rel="stylesheet" href="index.css">
+        <section class="download-section">
+            <a href="https://github.com/Borion-Updated/Releases/releases/latest/download/Borion.dll" class="download-btn">
+                Download Borion.dll
+            </a>
 
-		<!-- Search Keywords -->
-		<meta name="keywords" content="borion, horion, toolbox, minecraft hack, minecraft cheat, minecraft utility, hack, cheat, utility">
+            <div class="installation-guide">
+                <h2>How to Install</h2>
+                <ol>
+                    <li>Download the latest <code>Borion.dll</code> from the button above.</li>
+                    <li>Ensure you have Minecraft Bedrock Edition installed and running.</li>
+                    <li>Use a dll loader like <a href="https://github.com/fligger/FateInjector">fateinjector</a>, <a href="https://xealah.com/">modinjector</a>, or the <a href="https://horion.download/">Horion one</a> by right-clicking "inject"</li>
+                    <li>Enjoy</li>
+                </ol>
+                <p style="text-align: center; color: #ff6b6b; margin-top: 1rem;">
+                    ⚠️ Use at your own risk. Modifying game clients may violate terms of service.
+                </p>
+            </div>
+        </section>
+    </div>
 
-		<!-- Google / Search Engine Tags -->
-		<meta itemprop="name" content="Borion">
-		<meta itemprop="description" content="Borions official website">
-		<meta itemprop="image" content="./favicon.ico">
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="dev-team">
+                <a href="https://discordapp.com/users/693904495154823221" target="_blank" class="dev-profile">
+                    <img src="./img/devs/White.webp" alt="White">
+                    <span>White</span>
+                </a>
+                <a href="https://discordapp.com/users/1139179607501832292" target="_blank" class="dev-profile">
+                    <img src="./img/devs/Intop.webp" alt="Intop">
+                    <span>Intop</span>
+                </a>
+                <a href="https://discordapp.com/users/749214011962425374" target="_blank" class="dev-profile">
+                    <img src="./img/devs/marioSQ.webp" alt="marioSQ">
+                    <span>marioSQ</span>
+                </a>
+                <a href="https://discordapp.com/users/1125189851667501177" target="_blank" class="dev-profile">
+                    <img src="./img/devs/notnrg.webp" alt="notnrg">
+                    <span>notnrg</span>
+                </a>
+            </div>
 
-		<!-- Facebook Meta Tags -->
-		<meta property="og:url" content="https://borion-updated.github.io/">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="Borion">
-		<meta property="og:description" content="Borions official website">
-		<meta property="og:image" content="./favicon.ico">
+            <div class="social-links">
+                <a href="https://github.com/Borion-Updated" target="_blank" class="social-link">
+                    <img src="./img/links/github.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://discord.gg/SSPHJfpxEx" target="_blank" class="social-link">
+                    <img src="./img/links/discord.png" alt="Discord">
+                    <span>Discord</span>
+                </a>
+                <a href="https://www.youtube.com/@Borion-Updated" target="_blank" class="social-link">
+                    <img src="./img/links/youtube.png" alt="YouTube">
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+    </footer>
 
-		<!-- Twitter Meta Tags -->
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:title" content="Borion">
-		<meta name="twitter:description" content="Borions official website">
-		<meta name="twitter:image" content="https://borion-updated.github.io/">
-	</head>
-	<body>
-		<div id="titleBar">
-			<span id="authors">
-				<a href="https://discordapp.com/users/693904495154823221" target="_blank" rel="noopener"><img src="./img/devs/White.webp" alt=""><p>White</p></a>
-				<a href="https://discordapp.com/users/1139179607501832292" target="_blank" rel="noopener"><img src="./img/devs/Intop.webp" alt=""><p>Intop</p></a>
-				<a href="https://discordapp.com/users/749214011962425374" target="_blank" rel="noopener"><img src="./img/devs/marioSQ.webp" alt=""><p>marioSQ</p></a>
-				<a href="https://discordapp.com/users/1125189851667501177" target="_blank" rel="noopener"><img src="./img/devs/notnrg.webp" alt=""><p>notnrg</p></a>
-			</span>
-			<span id="pages">
-				<a href="./index.html"><img src="img/banner.png" height=100></a>
-			</span>
-			<span id="links">
-				<a href="https://github.com/Borion-Updated" target="_blank" rel="noopener"><p>Github</p><img src="./img/links/github.png" alt=""></a>
-				<a href="https://discord.gg/SSPHJfpxEx" target="_blank" rel="noopener"><p>Discord</p><img src="./img/links/discord.png" alt=""></a>
-				<a href="https://www.youtube.com/@Borion-Updated" target="_blank" rel="noopener"><p>Youtube</p><img src="./img/links/youtube.png" alt=""></a>
-			</span>
-		</div>
-		<p align="center">
-			<a href="https://github.com/Borion-Updated/Releases/releases/latest/download/Borion.dll"><img src="img/download.png" width=853></a>
-		</p>
-		<p style="text-align: center; padding-top: 50px; font-size: 400%">area unfinished</p>
-	</body>
+    <script>
+        const markdownContent = `Borion-Updated is an updated version of [Horion](https://github.com/horionclient/Horion) and [Horion-Open-SRC](https://github.com/NRGJobro/Horion-Open-SRC). Full credit goes to the original Horion developers and everyone who has contributed over the years for the base. We do NOT claim credit for the code of the base.`;
+        document.getElementById('description').innerHTML = marked.parse(markdownContent);
+    </script>
+</body>
 </html>
