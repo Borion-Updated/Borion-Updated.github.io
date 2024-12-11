@@ -23,8 +23,8 @@ const faqItems: FAQItem[] = [
     answer: "No, Borion does not cost money."
   },
   {
-    question: "Do nbt commands work with Borion?",
-    answer: "nbt commands work ONLY in single-player, that's because mojang patched the exploit on multiplayer so you can't load nbt on multiplayer worlds and NO CLIENT WILL EVER DO THAT (unless mojang is dumb enough to have a bug like that again wich is most likely not gonna happen)"
+    question: "When 1.21.50 support?",
+    answer: "Soon™️"
   }
 ]
 
