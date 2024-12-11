@@ -24,7 +24,7 @@ const faqItems: FAQItem[] = [
   },
   {
     question: "When 1.21.50 support?",
-    answer: "Soon™️"
+    answer: "No™️"
   }
 ]
 
