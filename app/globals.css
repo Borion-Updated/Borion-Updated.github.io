@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --borion-rgb: 64, 224, 254;
+  --borion-light-rgb: 125, 235, 255;
+  --borion-dark-rgb: 0, 192, 255;
+  --background-rgb: 10, 10, 10;
+}
+
+body {
+  @apply text-[#E5E5E5] overflow-x-hidden;
+  background: rgb(var(--background-rgb));
+}
+
+.grid-animation {
+  /* this should work now i hope */
+  width: 300px; 
+  height: 300px;
+  display: grid;
+  grid-template-rows: repeat(30, 1fr);
+  grid-template-columns: repeat(30, 1fr);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: 
+    translate(-50%, -50%) 
+    rotateX(45deg)
+    rotateY(0deg)
+    rotateZ(20deg) 
+    scale(7);
+  transform-style: preserve-3d;
+  will-change: transform;
+  gap: 1px; 
+}
+
+.grid-animation:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 25%, rgb(var(--background-rgb)) 80%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tile {  
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: background-color 150ms ease, transform 150ms ease;
+  --intensity: 0;
+  will-change: background-color, transform;
+  border-radius: 10%;
+}
+
+.tile:nth-child(4n) { --tile-color: var(--borion-rgb); }
+.tile:nth-child(4n + 1) { --tile-color: var(--borion-light-rgb); }
+.tile:nth-child(4n + 2) { --tile-color: var(--borion-dark-rgb); }
+.tile:nth-child(4n + 3) { --tile-color: var(--borion-rgb); }
+
+.tile {
+  background-color: rgba(var(--tile-color), calc(var(--intensity) * 0.8));
+  transform: scale(calc(1 + var(--intensity) * 0.05));
+}
+
+main {
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+}
+
+main * {
+  pointer-events: auto;
+}
+
+.download-button {
+  animation: pulse 2s infinite;
+}
+
+.download-button:hover {
+  animation: linear;
+  transform: scale(1.1);
+}
+
+
+
