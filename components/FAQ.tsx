@@ -12,7 +12,7 @@ type FAQItem = {
 const faqItems: FAQItem[] = [
   {
     question: "Which versions does Borion support?",
-	answer: "The latest [stable](https://github.com/Borion-Updated/Releases/releases/latest) release is 26.X. However, we do offer all previous DLLs, maybe you find one for your version. There are DLLs for 1.20.1X-1.21.3X and 1.21.13X-26.X."
+	answer: "The latest [stable](https://github.com/Borion-Updated/Releases/releases/latest) release is 26.X. However, we do offer all previous DLLs, maybe you find one for your version. There are DLLs for 1.20.1X-1.21.3X and 1.21.13X-26.1X (26.1X is in beta at the moment)."
   },
   {
     question: "Is Borion a virus?",
